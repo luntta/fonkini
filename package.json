@@ -1,0 +1,24 @@
+{
+  "name": "fonkini",
+  "version": "1.0.0",
+  "description": "A helpful Discord bot for Defenders of the Third Age",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luntta/fonkini.git"
+  },
+  "author": "Raine Luntta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luntta/fonkini/issues"
+  },
+  "homepage": "https://github.com/luntta/fonkini#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0"
+  }
+}
