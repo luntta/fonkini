@@ -4,7 +4,6 @@ if (process.env.NODE_ENV !== "production") {
 
 const Discord = require("discord.js");
 const cfg = require("./config.json");
-const ytdl = require("ytdl-core");
 
 const client = new Discord.Client();
 const queue = new Map();
