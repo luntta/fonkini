@@ -78,14 +78,7 @@ client.on("message", (message) => {
 			finalResult += results[i];
 		}
 
-		const reply = "<@" + message.author.id + ">" +
-			" is rolling **" +
-			roll +
-			"**. Result: **" +
-			results.join("** + **") +
-			"** = **" +
-			finalResult +
-			"**!";
+		const reply = `<@${message.author.id}> is rolling **${roll}**. Result: **${results.join("** + **")}** = ** ${finalResult}**!`;
 
 		message.channel.send(reply);
 
@@ -131,6 +124,8 @@ async function execute(message, serverQueue) {
 		title: songInfo.title,
 		url: songInfo.video_url,
 	};
+
+	if (song.title.includes("Anssi Kela") && song.title.includes("Milla")) song.title = "Rhella - Rhella";
 
 	// Biisijonon rakennus
 	if (!serverQueue) {
